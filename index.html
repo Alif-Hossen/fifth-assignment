@@ -33,8 +33,9 @@
                 <img class="h-[25px]  " src="assets/coin.png" alt="">
             </div>
 
-            <div class=" flex  gap-3  w-[100px] h-[45px] m-auto justify-center rounded-2xl " >
-                <h1 class="font-bold text-white bg-green-600 w-full rounded-3xl pl-6 pt-2 "> 0 copy</h1>
+            <div class=" flex  gap-3  w-[100px] h-[45px] m-auto justify-center rounded-2xl bg-green-600 " >
+                <h1 id="copy_main" class="font-bold text-white  rounded-3xl pl-2 pt-2 "> 0 </h1>
+                <h1 class="text-white font-bold pt-2">copy</h1>
             </div>
         </div>
     </div>
@@ -49,10 +50,11 @@
      </div>
 
      <!-- card section -->
-    <div class="flex bg-[#dfefff] ">
+    <div class=" flex  bg-[#dfefff] ">
 
-        <!-- one -->
-        <div class="   h-[1200px] w-[1400px] mt-5  grid grid-cols-3 gap-2">
+        <div class="   h-[1200px] w-[1400px] mt-5  md:grid grid-cols-3 gap-2">
+
+            <!-- one -->
             <div class="w-[380px] border-2 border-gray-200 h-[350px] bg-white rounded-xl m-5 p-5 shadow-xl shadow-gray-300">
                 <div class="flex justify-between items-center ">
                     <img class=" rounded-2xl bg-[#FFE3E2]" src="assets/emergency.png" alt="">
@@ -67,7 +69,7 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[50px] bg-gray-200 pl-3">All</p>
                 </div>
                 <div class=" justify-between mt-5">
-                      <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy  text-gray-500"></i>Copy</button>
+                      <button id="copy_1" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy  text-gray-500"></i>Copy</button>
 
                       <button id="call_btn1" class=" btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
                 </div>
@@ -88,18 +90,10 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[70px] bg-gray-200 pl-3">Police</p>
                 </div>
                 <div class="flex justify-between mt-5">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_2" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn2" class="btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg h-9">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
+
                 </div>
             </div>
 
@@ -118,19 +112,9 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[50px] bg-gray-200 pl-3">Fire</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_3" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn3" class=" btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
-
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -149,19 +133,9 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[70px] bg-gray-200 pl-3">Health</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_4" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black "> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn4" class=" btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
-
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -180,19 +154,10 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[60px] bg-gray-200 pl-3">Help</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_5" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn5" class="btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
 
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -211,19 +176,10 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[60px] bg-gray-200 pl-3">Govt</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_6" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn6" class=" btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
 
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -242,19 +198,9 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[100px] bg-gray-200 pl-3">Electricity</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_7" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn7" class="btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
-
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -273,19 +219,10 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[60px] bg-gray-200 pl-3">NGO</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_8" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn8" class="btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
 
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
 
@@ -304,48 +241,32 @@
                     <p class="text-gray-500 border-2 border-gray-200 rounded-xl w-[80px] bg-gray-200 pl-3">Travel</p>
                 </div>
                 <div class="flex justify-between mt-5 h-9">
-                    <button class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
+                    <button id="copy_9" class="text-gray-500 btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 hover:bg-black"> <i class="fa-regular fa-copy text-gray-500"></i>Copy</button>
 
                       <button id="call_btn9" class="btn btn-soft btn-primary border-2 border-gray-200 w-[45%] rounded-lg h-9 bg-green-600 hover:bg-gray-300"> <i class="fa-solid fa-phone-volume"></i> Call</button>
 
-                    <!-- <div class="flex items-center justify-center  gap-5 border-2 border-gray-200 w-[45%] rounded-lg">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="text-gray-500">Copy</p>
-                    </div>
-                    <div class="flex items-center justify-center
-                    gap-5  w-[45%] rounded-lg bg-green-600 ">
-                        <i class="text-white fa-solid fa-phone"></i>
-                        <p class="text-white">Call</p>
-                    </div> -->
                 </div>
             </div>
-            
-
         </div>
 
-        <!--  TRANSACTION -->
-        <div class=" w-[450px] h-[1150px]  ml-5 mt-10 rounded-xl m-5  bg-white ">
+
+        <div class="  w-[450px] h-[1150px]  ml-5 mt-10 rounded-xl m-5  bg-white ">
             <div class="flex justify-between">
                 <div class="flex justify-center   gap-[15px] font-bold text-lg m-2">
                     <i class="fa-regular fa-clock mt-2"></i>
                     <p>Call History</p>
                 </div>
                 <div>
-                    <button id="clear_btn" class=" rounded-xl m-2 ml-5 w-[100px] h-[40px] items-center bg-green-600 text-white font-bold   ">Clear</button>
+                    <button id="clear_btn" class=" rounded-xl m-2 ml-5 w-[100px] h-[40px] items-center bg-green-600 text-white font-bold hover:bg-gray-300  ">Clear</button>
                 </div>
             </div>
 
             <div id="transaction_container">
                         
-
-
             </div>
-            
-        
         </div>
-
+        <!--  TRANSACTION -->
         
-
     </div>
 
 

@@ -148,28 +148,12 @@ for (let i = 1; i <= 9; i++) {
 
 // ONE
 
-// document.getElementById("call_btn1")
-//     .addEventListener("click", function (){
-//         alert("Calling National Emergency Service 999...?")
-
-//         const coins = document.getElementById("coin_main").innerText
-//         console.log(coins)
-
-
-//         const availableCoins = coins - 20
-//         document.getElementById("coin_main").innerText = availableCoins
-
-//         if(availableCoins < 20){
-//             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
-
-//         }
-
 document.getElementById("call_btn1").addEventListener("click", function () {
     const coins = parseInt(document.getElementById("coin_main").innerText);
 
     if (coins < 20) {
         alert("You don't have enough coins. Minimum 20 coins required to call.");
-        return; // coin na thakle baki code run hobe na
+        return; 
     }
 
     // coin deduct
@@ -229,7 +213,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -284,7 +268,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -338,7 +322,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
             if (coins < 20) {
                 alert("You don't have enough coins. Minimum 20 coins required to call.");
-                return; // coin na thakle baki code run hobe na
+                return; 
             }
 
             const availableCoins = coins - 20;
@@ -391,7 +375,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -445,7 +429,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -499,7 +483,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -552,7 +536,7 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         if (coins < 20) {
             alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -604,8 +588,8 @@ document.getElementById("call_btn1").addEventListener("click", function () {
         const coins = parseInt(document.getElementById("coin_main").innerText);
 
         if (coins < 20) {
-            alert("You don't have enough coins. Minimum 20 coins required to call.");
-            return; // coin na thakle baki code run hobe na
+            alert(" You don't have enough coins. Minimum 20 coins required to call.");
+            return; 
         }
 
         const availableCoins = coins - 20;
@@ -663,6 +647,160 @@ document.getElementById("call_btn1").addEventListener("click", function () {
 
         alert("All transaction info has been deleted!");
 });
+
+
+
+//  FOR COPY BUTTON
+
+// document.getElementById("copy_1").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "999"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 999...?");
+
+// })
+
+// document.getElementById("copy_2").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "999"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 999...?");
+
+// })
+
+// document.getElementById("copy_3").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "999"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 999...?");
+
+// })
+
+// document.getElementById("copy_4").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "1994-999999"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 1994-999999...?");
+
+// })
+
+// document.getElementById("copy_5").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "109"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 109...?");
+
+// })
+
+// document.getElementById("copy_6").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "106"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 106...?");
+
+// })
+
+// document.getElementById("copy_7").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "16216"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 16216...?");
+
+// })
+
+// document.getElementById("copy_8").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "16445"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 16445...?");
+
+// })
+
+// document.getElementById("copy_9").addEventListener("click", function () {
+//     const copy = parseInt(document.getElementById("copy_main").innerText);
+
+//     const number = "163"
+//     navigator.clipboard.writeText(number);
+
+//     const availableCopy = copy + 1 ;
+//     document.getElementById("copy_main").innerText = availableCopy;
+
+//     alert("Copying Number 163...?");
+
+// })
+
+
+
+const numberMap = {
+    "copy_1": "999",
+    "copy_2": "999",
+    "copy_3": "999",
+    "copy_4": "1994-999999",
+    "copy_5": "109",
+    "copy_6": "106",
+    "copy_7": "16216",
+    "copy_8": "16445",
+    "copy_9": "163"
+};
+
+function handleCopy(event) {
+    const buttonId = event.target.id; 
+    const number = numberMap[buttonId]; 
+
+    if(!number) return; 
+
+    navigator.clipboard.writeText(number);
+
+    const copyElem = document.getElementById("copy_main");
+    const currentCount = parseInt(copyElem.innerText);
+    copyElem.innerText = currentCount + 1;
+
+    alert("Copying Number " + number + "...");
+}
+
+for(let id in numberMap) {
+    document.getElementById(id).addEventListener("click", handleCopy);
+}
 
 
 
