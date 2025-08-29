@@ -146,20 +146,38 @@ for (let i = 1; i <= 9; i++) {
 
 // call button
 
-document.getElementById("call_btn1")
-    .addEventListener("click", function (){
-        alert("Calling National Emergency Service 999...?")
+// ONE
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
+// document.getElementById("call_btn1")
+//     .addEventListener("click", function (){
+//         alert("Calling National Emergency Service 999...?")
 
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
+//         const coins = document.getElementById("coin_main").innerText
+//         console.log(coins)
 
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
-        }
 
+//         const availableCoins = coins - 20
+//         document.getElementById("coin_main").innerText = availableCoins
+
+//         if(availableCoins < 20){
+//             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+
+//         }
+
+document.getElementById("call_btn1").addEventListener("click", function () {
+    const coins = parseInt(document.getElementById("coin_main").innerText);
+
+    if (coins < 20) {
+        alert("You don't have enough coins. Minimum 20 coins required to call.");
+        return; // coin na thakle baki code run hobe na
+    }
+
+    // coin deduct
+    const availableCoins = coins - 20;
+    document.getElementById("coin_main").innerText = availableCoins;
+
+    // call alert
+    alert("Calling National Emergency Service 999...?");
 
         // **** 
 
@@ -206,19 +224,19 @@ document.getElementById("call_btn1")
     })
 
     // two
-document.getElementById("call_btn2")
-    .addEventListener("click", function (){
-        alert("Calling Police Helpline 999...?")
+    document.getElementById("call_btn2").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
-
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Police Helpline Service 999...?");
+        
 
         // **** 
         const data = {
@@ -261,19 +279,18 @@ document.getElementById("call_btn2")
 
     // three
 
-document.getElementById("call_btn3")
-    .addEventListener("click", function (){
-        alert("Calling Fire Service 999...?")
+    document.getElementById("call_btn3").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
-
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Fire Service 999...?");
 
         // **** 
         const data = {
@@ -316,19 +333,18 @@ document.getElementById("call_btn3")
     })
 
     // four
-document.getElementById("call_btn4")
-    .addEventListener("click", function (){
-        alert("Calling Ambulance Service 1994-999999...?")
+    document.getElementById("call_btn4").addEventListener("click", function () {
+            const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
+            if (coins < 20) {
+                alert("You don't have enough coins. Minimum 20 coins required to call.");
+                return; // coin na thakle baki code run hobe na
+            }
 
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
+            const availableCoins = coins - 20;
+            document.getElementById("coin_main").innerText = availableCoins;
 
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
-        }
+            alert("Calling Ambulance  Service 1994-999999...?");
 
         // **** 
         const data = {
@@ -370,19 +386,18 @@ document.getElementById("call_btn4")
     })
 
     // five
-document.getElementById("call_btn5")
-    .addEventListener("click", function (){
-        alert("Calling Women & Child Helpline 109...?")
+    document.getElementById("call_btn5").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
-
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Women & Child Helpline Service 109...?");
 
         // **** 
         const data = {
@@ -424,19 +439,19 @@ document.getElementById("call_btn5")
     })
 
     // six
-document.getElementById("call_btn6")
-    .addEventListener("click", function (){
-        alert("Calling Anti-Corruption Helpline 106...?")
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
+    document.getElementById("call_btn6").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Anti-Correuption Helpline Service 106...?");
 
         // **** 
         const data = {
@@ -478,19 +493,19 @@ document.getElementById("call_btn6")
     })
 
     // seven
-document.getElementById("call_btn7")
-    .addEventListener("click", function (){
-        alert("Calling Electricity HelpLine 16216...?")
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
+    document.getElementById("call_btn7").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Electricity Helpline Service 16216...?");
 
         // **** 
         const data = {
@@ -532,19 +547,18 @@ document.getElementById("call_btn7")
     })
 
     // eight
-document.getElementById("call_btn8")
-    .addEventListener("click", function (){
-        alert("Calling Brac Helpline 16445...?")
+    document.getElementById("call_btn8").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
-
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Brac Helpline Service 16445...?");
 
         // **** 
         const data = {
@@ -586,19 +600,18 @@ document.getElementById("call_btn8")
     })
 
     // nine
-document.getElementById("call_btn9")
-    .addEventListener("click", function (){
-        alert("Calling Bangladesh Railways Helpline 163...?")
+    document.getElementById("call_btn9").addEventListener("click", function () {
+        const coins = parseInt(document.getElementById("coin_main").innerText);
 
-        const coins = document.getElementById("coin_main").innerText
-        console.log(coins)
-
-        const availableCoins = coins - 20
-        document.getElementById("coin_main").innerText = availableCoins
-
-        if(availableCoins < 19){
-            alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
+        if (coins < 20) {
+            alert("You don't have enough coins. Minimum 20 coins required to call.");
+            return; // coin na thakle baki code run hobe na
         }
+
+        const availableCoins = coins - 20;
+        document.getElementById("coin_main").innerText = availableCoins;
+
+        alert("Calling Bangladesh Railway Helpline Service 163...?");
 
         // **** 
         const data = {
