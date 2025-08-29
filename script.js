@@ -1,7 +1,6 @@
 // // console.log("is It Working?")
 
 
-
 //  document.getElementById("heart1")
 //     .addEventListener("click", function(){
 //         console.log("Heart Clicked");
@@ -119,6 +118,11 @@
 //     })
 
 
+
+const transactionData = [];
+
+
+
 function handleHeartClick() {
     console.log("Heart Clicked");
 
@@ -155,7 +159,53 @@ document.getElementById("call_btn1")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+
+        // **** 
+
+        const data = {
+            title : "National Emergency Number",
+            number : "999",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+
+        // TRANSACTION GET START
+
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+                
+            }
+
+        // TRANSACTION END
+
     })
+
+    // two
 document.getElementById("call_btn2")
     .addEventListener("click", function (){
         alert("Calling Police Helpline 999...?")
@@ -169,7 +219,48 @@ document.getElementById("call_btn2")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Police Helpline Number",
+            number : "999",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+                
+            }
+        // TRANSACTION END
     })
+
+    // three
+
 document.getElementById("call_btn3")
     .addEventListener("click", function (){
         alert("Calling Fire Service 999...?")
@@ -183,7 +274,48 @@ document.getElementById("call_btn3")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Fire Service Number",
+            number : "999",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
+
     })
+
+    // four
 document.getElementById("call_btn4")
     .addEventListener("click", function (){
         alert("Calling Ambulance Service 1994-999999...?")
@@ -197,7 +329,47 @@ document.getElementById("call_btn4")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Ambulance Service",
+            number : "1994-999999",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+    // five
 document.getElementById("call_btn5")
     .addEventListener("click", function (){
         alert("Calling Women & Child Helpline 109...?")
@@ -211,7 +383,47 @@ document.getElementById("call_btn5")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Woman & Child Helpline",
+            number : "109",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+    // six
 document.getElementById("call_btn6")
     .addEventListener("click", function (){
         alert("Calling Anti-Corruption Helpline 106...?")
@@ -225,7 +437,47 @@ document.getElementById("call_btn6")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Anti-Corruption Helpline",
+            number : "106",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+    // seven
 document.getElementById("call_btn7")
     .addEventListener("click", function (){
         alert("Calling Electricity HelpLine 16216...?")
@@ -239,7 +491,47 @@ document.getElementById("call_btn7")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Electricity Helpline",
+            number : "16216",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+    // eight
 document.getElementById("call_btn8")
     .addEventListener("click", function (){
         alert("Calling Brac Helpline 16445...?")
@@ -253,7 +545,47 @@ document.getElementById("call_btn8")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Brac Helpline",
+            number : "16445",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+    // nine
 document.getElementById("call_btn9")
     .addEventListener("click", function (){
         alert("Calling Bangladesh Railways Helpline 163...?")
@@ -267,4 +599,77 @@ document.getElementById("call_btn9")
         if(availableCoins < 19){
             alert("You Don't have Enough COins. Minimum 20 coins required To Call.")
         }
+
+        // **** 
+        const data = {
+            title : "Bangladesh Railway Helpline",
+            number : "163",
+            time: new Date().toLocaleTimeString('en-US', { hour12: true})
+
+        }
+        transactionData.push(data)
+
+        // TRANSACTION GET 
+        const transaction_container = document.getElementById("transaction_container");
+            transaction_container.innerText = ""
+
+            for(const data of transactionData){
+                const div = document.createElement("div");
+                div.innerHTML = `
+                        <div class="flex justify-between items-center  rounded-xl bg-gray-200 m-3 h-[80px] p-3">
+                            <div class="">
+                                <h1 class="font-bold text-xl">
+                                    ${data.title}
+                                </h1>
+                                <p class="text-gray-500 text-lg">
+                                    ${data.number}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-lg">
+                                    ${data.time}
+                                </p>
+                            </div>
+                        </div>
+                    
+                `;
+                transaction_container.appendChild(div)
+            }
+        // TRANSACTION END
+
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
