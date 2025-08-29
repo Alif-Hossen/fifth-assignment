@@ -640,6 +640,18 @@ document.getElementById("call_btn9")
     })
 
 
+    //  CLEAR BUTTON
+
+    document.getElementById("clear_btn").addEventListener("click", function() {
+        transactionData.length = 0;
+
+        const transaction_container = document.getElementById("transaction_container");
+        transaction_container.innerHTML = "";
+
+        alert("All transaction info has been deleted!");
+});
+
+
 
 
 
