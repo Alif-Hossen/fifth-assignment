@@ -129,7 +129,7 @@ function handleHeartClick() {
     const heartElement = document.getElementById("heart_main");
     let heartValue = parseInt(heartElement.innerText);
     console.log("Current Heart Value:", heartValue);
-
+    
     heartValue += 1;
     console.log("Updated Heart Value:", heartValue);
 
